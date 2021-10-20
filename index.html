@@ -16,7 +16,7 @@
 </head> -->
 
 <body style="margin : 0px; overflow: hidden;">
-
+  <video id="gum-local" autoplay playsinline>
     <a-scene embedded arjs>
       <a-marker preset="hiro">
         <a-entity
@@ -27,10 +27,11 @@
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
-
-  <!-- <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script> -->
-  <!-- <script src="js/main.js"></script> -->
-  <!-- <script src="../../../js/lib/ga.js"></script> -->
+  </video>
+  <button id="showVideo">Open camera</button>
+  <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script> 
+  <script src="js/main.js"></script>
+  <script src="js/lib/ga.js"></script>
 
 </body>
 
