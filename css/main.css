@@ -1,7 +1,3 @@
-.aframebox {
-    height: 100px;
-    width: 100px;
-}
 
 video {
     --width: calc(45%);
