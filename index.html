@@ -30,12 +30,6 @@
 
 <body style="margin : 0px; overflow: hidden;">
 
-  <div id="container">
-    <h1><a href="//webrtc.github.io/samples/" title="WebRTC samples homepage">WebRTC samples</a>
-        <span>getUserMedia</span></h1>
-
-    <!--<video id="gum-local" autoplay playsinline></video>-->
-
     <a-scene embedded arjs>
       <a-marker preset="hiro">
         <a-entity
@@ -46,14 +40,6 @@
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
-
-    <button id="showVideo">Open camera</button>
-
-    <div id="errorMsg"></div>
-
-  </div>
-
-
 
   <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
   <script src="js/main.js"></script>
