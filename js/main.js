@@ -10,11 +10,19 @@
 
 'use strict';
 
-// Call main() in demo.js
-main();
+const leftVideo = document.getElementById('a-scene');
+const rightVideo = document.getElementById('video');
 
-const ascene = document.querySelector('a-scene');
-const video = document.querySelector('video');
-
-const stream = ascene.captureStream();
-video.srcObject = stream;
+leftVideo.addEventListener('canplay', () => {
+  let stream;
+  const fps = 0;
+  if (leftVideo.captureStream) {
+    stream = leftVideo.captureStream(fps);
+  } else if (leftVideo.mozCaptureStream) {
+    stream = leftVideo.mozCaptureStream(fps);
+  } else {
+    console.error('Stream capture is not supported');
+    stream = null;
+  }
+  rightVideo.srcObject = stream;
+});
