@@ -4,6 +4,10 @@
 <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
 <!-- we import arjs version without NFT but with marker + location based support -->
 <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+
+<script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+<script src="js/main.js"></script>
+<!-- <script src="../../../js/lib/ga.js"></script> -->
  
 <head>
 
@@ -37,16 +41,7 @@
 
     <div id="errorMsg"></div>
 
-    <p class="warning"><strong>Warning:</strong> if you're not using headphones, pressing play will cause feedback.</p>
-
-    <p>Display the video stream from <code>getUserMedia()</code> in a video element.</p>
-
-    <p>The <code>MediaStream</code> object <code>stream</code> passed to the <code>getUserMedia()</code> callback is in
-        global scope, so you can inspect it from the console.</p>
-
-    <a href="https://github.com/webrtc/samples/tree/gh-pages/src/content/getusermedia/gum"
-       title="View source for this page on GitHub" id="viewSource">View source on GitHub</a>
-</div>
+  </div>
 
   <a-scene embedded arjs>
     <a-marker preset="hiro">
@@ -58,11 +53,6 @@
     </a-marker>
     <a-entity camera></a-entity>
   </a-scene>
-
-<script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
-<script src="js/main.js"></script>
-
-<!-- <script src="../../../js/lib/ga.js"></script> -->
 
 </body>
 
