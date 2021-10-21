@@ -10,19 +10,11 @@
 
 'use strict';
 
-const leftVideo = document.getElementById('a-scene');
-const rightVideo = document.getElementById('video');
+// Call main() in demo.js
+main();
 
-leftVideo.addEventListener('canplay', () => {
-  let stream;
-  const fps = 0;
-  if (leftVideo.captureStream) {
-    stream = leftVideo.captureStream(fps);
-  } else if (leftVideo.mozCaptureStream) {
-    stream = leftVideo.mozCaptureStream(fps);
-  } else {
-    console.error('Stream capture is not supported');
-    stream = null;
-  }
-  rightVideo.srcObject = stream;
-});
+const canvas = document.querySelector('canvas');
+const video = document.querySelector('video');
+
+const stream = canvas.captureStream();
+video.srcObject = stream;
