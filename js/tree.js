@@ -3,7 +3,8 @@
 	//////////////////////////////////////////////////////////////////////////////////
 
 	// init renderer
-	var renderer	= new THREE.WebGLRenderer({
+    const canvas = document.querySelector('#c');
+	var renderer	= new THREE.WebGLRenderer({canvas,
 		antialias: true,
 		alpha: true
 	});
