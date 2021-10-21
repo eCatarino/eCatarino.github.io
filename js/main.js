@@ -11,7 +11,7 @@
 'use strict';
 
 // Call main() in demo.js
-main();
+//main();
 
 const canvas = document.querySelector('#container canvas');
 const video = document.querySelector('video');
