@@ -8,6 +8,7 @@
 
 /* global main */
 
+
 'use strict';
 
 const canvas = document.querySelector('#container canvas');
