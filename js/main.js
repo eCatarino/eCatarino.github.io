@@ -13,7 +13,7 @@
 // Call main() in demo.js
 main();
 
-const canvas = document.querySelector('canvas');
+const canvas = document.querySelector('#container canvas');
 const video = document.querySelector('video');
 
 const stream = canvas.captureStream();
