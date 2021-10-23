@@ -47,7 +47,7 @@ var server = null;
 if(window.location.protocol === 'http:')
 	server = "http://" + "10.0.2.15" + ":8088/janus";
 else
-	server = "https://" + "10.0.2.15" + ":8089/janus";
+	server = "https://" + "10.0.2.15" + ":8088/janus";
 
 var janus = null;
 var streaming = null;
