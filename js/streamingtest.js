@@ -42,11 +42,12 @@
 // in the presented order. The first working server will be used for
 // the whole session.
 //
+// window.location.hostname
 var server = null;
 if(window.location.protocol === 'http:')
-	server = "http://" + window.location.hostname + ":8088/janus";
+	server = "http://" + "10.0.2.15" + ":8088/janus";
 else
-	server = "https://" + window.location.hostname + ":8089/janus";
+	server = "https://" + "10.0.2.15" + ":8089/janus";
 
 var janus = null;
 var streaming = null;
