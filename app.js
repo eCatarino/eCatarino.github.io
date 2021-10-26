@@ -80,7 +80,7 @@ function joinSession() {
 
 				// When our HTML video has been added to DOM...
 				publisher.on('videoElementCreated', function (event) {
-					initMainVideo(event.element, myUserName);
+					//initMainVideo(event.element, myUserName);
 					appendUserData(event.element, myUserName);
 					event.element['muted'] = true;
 				});
