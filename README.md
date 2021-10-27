@@ -20,9 +20,6 @@ http-server openvidu-tutorials/openvidu-insecure-js/web
 
 4) OpenVidu Platform service must be up and running in your development machine. The easiest way is running this Docker container which wraps both of them (you will need Docker CE):
 
-# WARNING: this container is not suitable for production deployments of OpenVidu Platform
-# Visit https://docs.openvidu.io/en/stable/deployment
-
 docker run -p 4443:4443 --rm -e OPENVIDU_SECRET=MY_SECRET openvidu/openvidu-server-kms:2.20.0
 
 5) Go to http://localhost:8080 to test the app once the server is running. The first time you use the docker container, an alert 
